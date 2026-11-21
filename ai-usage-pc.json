@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T14:03+09:00",
+  "updatedAt": "2026-11-21T14:04+09:00",
   "services": [
     {
       "id": "codex",
@@ -8,7 +8,7 @@
       "weeklyRemainingPct": 64,
       "weeklyResetAt": "2026-11-24T02:26:34+09:00",
       "fiveHourRemainingPct": 100,
-      "fiveHourResetAt": "2026-11-21T19:03:22+09:00",
+      "fiveHourResetAt": "2026-11-21T19:04:56+09:00",
       "subLimit": null
     },
     {
@@ -16,9 +16,9 @@
       "name": "Claude Code",
       "status": "ok",
       "weeklyRemainingPct": 85,
-      "weeklyResetAt": "2026-11-25T09:59:59.978896+00:00",
-      "fiveHourRemainingPct": 83,
-      "fiveHourResetAt": "2026-11-21T05:09:59.978879+00:00",
+      "weeklyResetAt": "2026-11-25T09:59:59.872355+00:00",
+      "fiveHourRemainingPct": 82,
+      "fiveHourResetAt": "2026-11-21T05:09:59.872332+00:00",
       "subLimit": null
     }
   ]
