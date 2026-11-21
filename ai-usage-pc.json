@@ -1,0 +1,17 @@
+{
+  "updatedAt": "2026-11-21T13:40+09:00",
+  "services": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "status": "unavailable",
+      "note": "auth.json 없음 (Codex CLI/앱에 로그인한 적 없음)"
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "status": "unavailable",
+      "note": ".credentials.json 없음 (Claude Code에 로그인한 적 없음)"
+    }
+  ]
+}
