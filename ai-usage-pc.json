@@ -1,25 +1,21 @@
 {
-  "updatedAt": "2026-11-21T17:11+09:00",
+  "updatedAt": "2026-11-21T21:58+09:00",
   "services": [
     {
       "id": "codex",
       "name": "Codex",
       "status": "ok",
-      "weeklyRemainingPct": 62,
+      "weeklyRemainingPct": 55,
       "weeklyResetAt": "2026-11-24T02:26:34+09:00",
-      "fiveHourRemainingPct": 90,
-      "fiveHourResetAt": "2026-11-21T19:37:03+09:00",
+      "fiveHourRemainingPct": 100,
+      "fiveHourResetAt": "2026-11-22T02:58:09+09:00",
       "subLimit": null
     },
     {
       "id": "claude-code",
       "name": "Claude Code",
-      "status": "ok",
-      "weeklyRemainingPct": 83,
-      "weeklyResetAt": "2026-11-25T10:00:00.180389+00:00",
-      "fiveHourRemainingPct": 87,
-      "fiveHourResetAt": "2026-11-21T10:10:00.180368+00:00",
-      "subLimit": null
+      "status": "unavailable",
+      "note": "토큰 만료 — Claude Code를 한 번 실행하면 갱신됨 (이 스크립트는 갱신하지 않음)"
     }
   ]
 }
