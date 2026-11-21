@@ -57,7 +57,7 @@ function mergeServices(sources) {
     for (const s of src.data.services || []) {
       const cur = byId[s.id];
       if (!cur || rank(s) > rank(cur.s) ||
-          (rank(s) === rank(cur.s) && src.data.updatedAt > cur.at)) {
+          (rank(s) === rank(cur.s) && new Date(src.data.updatedAt) > new Date(cur.at))) {
         byId[s.id] = { s, at: src.data.updatedAt };
       }
     }
@@ -66,8 +66,11 @@ function mergeServices(sources) {
   for (const id of Object.keys(byId)) {
     if (!SERVICE_ORDER.includes(id)) services.push(byId[id].s);
   }
-  // 전체 신선도는 가장 오래된 소스 기준 (가장 늦게 갱신된 쪽에 속지 않기)
-  const oldest = sources.map((x) => x.data.updatedAt).sort()[0];
+  // 전체 신선도는 실제로 표시되는 항목 중 가장 오래된 소스 기준
+  // (캐시·내장 스냅샷은 실제로 쓰일 때만 시점에 반영된다)
+  const used = SERVICE_ORDER.filter((id) => byId[id]).map((id) => byId[id].at);
+  const oldest = (used.length ? used : sources.map((x) => x.data.updatedAt))
+    .sort((a, b) => new Date(a) - new Date(b))[0];
   return { updatedAt: oldest, services };
 }
 
