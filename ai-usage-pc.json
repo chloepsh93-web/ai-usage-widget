@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-21T21:58+09:00",
+  "updatedAt": "2026-11-21T23:11+09:00",
   "services": [
     {
       "id": "codex",
       "name": "Codex",
       "status": "ok",
-      "weeklyRemainingPct": 55,
+      "weeklyRemainingPct": 50,
       "weeklyResetAt": "2026-11-24T02:26:34+09:00",
-      "fiveHourRemainingPct": 100,
-      "fiveHourResetAt": "2026-11-22T02:58:09+09:00",
+      "fiveHourRemainingPct": 69,
+      "fiveHourResetAt": "2026-11-22T03:19:30+09:00",
       "subLimit": null
     },
     {
